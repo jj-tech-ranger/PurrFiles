@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PurrCare - Pet Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "secondary": "#795e8d",
+                        "accent-pink": "#f472b6",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(#f472b633 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full max-w-md mx-auto flex-col bg-white dark:bg-slate-900 shadow-2xl overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center bg-white dark:bg-slate-900 p-4 pb-2 justify-between sticky top-0 z-10 border-b border-primary/5">
+<div class="text-primary dark:text-primary flex size-12 shrink-0 items-center justify-start cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Pet Profile</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="flex p-6 @container relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="paw-pattern h-full w-full"></div>
+</div>
+<div class="flex w-full flex-col gap-4 items-center relative z-10">
+<div class="flex gap-4 flex-col items-center">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 ring-4 ring-primary/20 shadow-xl" data-alt="Close up photo of a Siamese cat named Luna" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBG3mpD2ObrOpM11pgd7h6LSj77sCuUvatvjcRx-hnkwNdpBfkPpK9ZHQGsDoUj0c9DemJuumifHR3hGtJ0SW8pdP95XVr6PgDes071wsUfkRkwErVAPzHDxXHpG7BtqgmZQuyqzlENxgj8_jZJhJ2P4VP2USsbbCC0W-Q9-yx0X35v2vpCz77SAdEGsPIYzOJ-G3Ol_QERy9d2LGB4A78JYBqw7ayDXjjQHHM37ZNioKxXYUBroyz7rujFuaGZn7JmYULljYVGammF");'></div>
+<div class="absolute bottom-1 right-1 bg-accent-pink text-white rounded-full p-1 border-2 border-white dark:border-slate-900">
+<span class="material-symbols-outlined text-sm block">female</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-slate-900 dark:text-slate-100 text-[28px] font-extrabold leading-tight tracking-tight text-center">Luna</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-secondary dark:text-secondary/80 text-base font-medium">Siamese Cat</span>
+<span class="w-1 h-1 bg-secondary/30 rounded-full"></span>
+<span class="text-secondary dark:text-secondary/80 text-base font-medium">3 years old</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Health Summary Card -->
+<div class="px-4 py-2 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg shadow-primary/5 bg-gradient-to-br from-primary to-primary/90 p-5 text-white">
+<div class="flex items-center justify-between mb-4">
+<p class="text-lg font-bold tracking-tight">Health Summary</p>
+<div class="flex items-center gap-1 bg-white/20 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-xs fill-1">favorite</span>
+<span class="text-xs font-bold">Excellent</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+<p class="text-white/70 text-xs font-medium uppercase tracking-wider">Wellness Score</p>
+<p class="text-2xl font-bold">92%</p>
+<div class="w-full bg-white/20 h-1.5 mt-2 rounded-full overflow-hidden">
+<div class="bg-accent-pink h-full w-[92%]"></div>
+</div>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex flex-col gap-0.5">
+<p class="text-white/70 text-[10px] font-medium uppercase tracking-wider">Weight</p>
+<p class="text-sm font-semibold">4.5 kg</p>
+</div>
+<div class="flex flex-col gap-0.5 mt-2">
+<p class="text-white/70 text-[10px] font-medium uppercase tracking-wider">Next Vet Visit</p>
+<p class="text-sm font-semibold">Oct 12, 2023</p>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white text-primary text-sm font-bold shadow-sm active:scale-95 transition-transform">
+<span class="truncate">View Detailed Report</span>
+</button>
+</div>
+</div>
+<!-- Tabs -->
+<div class="mt-4">
+<div class="flex border-b border-primary/10 px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-secondary dark:text-secondary/80 pb-3 pt-4 flex-1 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-tight">About</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-3 pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-tight">Medical</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-secondary dark:text-secondary/80 pb-3 pt-4 flex-1 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-tight">Gallery</p>
+</a>
+</div>
+</div>
+<!-- Medical Content -->
+<div class="flex-1 p-4 flex flex-col gap-6 bg-background-light/50 dark:bg-slate-900">
+<!-- Vaccinations -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">vaccines</span>
+                        Recent Vaccinations
+                    </h3>
+<button class="text-primary text-xs font-bold">See All</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-primary/5">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">done_all</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">FVRCP Booster</p>
+<p class="text-xs text-secondary dark:text-secondary/70">Administered on Aug 15, 2023</p>
+</div>
+<span class="material-symbols-outlined text-secondary/40 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-primary/5">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">done_all</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Rabies (1 year)</p>
+<p class="text-xs text-secondary dark:text-secondary/70">Administered on Mar 10, 2023</p>
+</div>
+<span class="material-symbols-outlined text-secondary/40 text-sm">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Medications -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">medication</span>
+                        Active Medications
+                    </h3>
+<button class="text-primary text-xs font-bold">Add New</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-primary/5 border-l-4 border-l-accent-pink">
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Heartgard Plus</p>
+<span class="bg-accent-pink/10 text-accent-pink text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">Daily</span>
+</div>
+<p class="text-xs text-secondary dark:text-secondary/70">1 tablet with breakfast</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-bold text-primary uppercase">Next dose</p>
+<p class="text-xs font-semibold text-slate-900 dark:text-slate-100">Tomorrow, 8:00 AM</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Navigation -->
+<div class="flex gap-2 border-t border-primary/10 bg-white dark:bg-slate-900 px-4 pb-6 pt-2 sticky bottom-0">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-secondary dark:text-secondary/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-bold">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">pets</span>
+<p class="text-[10px] font-bold">Pets</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-secondary dark:text-secondary/60" href="#">
+<span class="material-symbols-outlined">ecg_heart</span>
+<p class="text-[10px] font-bold">Care</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-secondary dark:text-secondary/60" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-[10px] font-bold">Settings</p>
+</a>
+</div>
+</div>
+</body></html>

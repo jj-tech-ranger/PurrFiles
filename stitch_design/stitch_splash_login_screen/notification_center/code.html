@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PurrCare Notifications</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header Section -->
+<header class="sticky top-0 z-10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center px-4 py-4 gap-4">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/5 text-primary">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">Notifications</h1>
+<div class="ml-auto">
+<button class="text-primary text-sm font-semibold px-3 py-1 rounded-full hover:bg-primary/5">
+                    Mark all as read
+                </button>
+</div>
+</div>
+</header>
+<!-- Content Section -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Section Label -->
+<div class="px-6 py-4">
+<h2 class="text-xs font-bold uppercase tracking-widest text-primary/60">Recent</h2>
+</div>
+<!-- Notification List -->
+<div class="space-y-1">
+<!-- Health Reminder -->
+<div class="flex gap-4 bg-white dark:bg-slate-900/50 px-6 py-5 transition-colors hover:bg-primary/5">
+<div class="flex items-center justify-center rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-500 shrink-0 size-12">
+<span class="material-symbols-outlined">pets</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<div class="flex justify-between items-start">
+<p class="text-base font-bold leading-tight">Luna's flea treatment is due tomorrow</p>
+<span class="text-[10px] font-medium text-slate-400 whitespace-now nowrap ml-2">2h ago</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Don't forget to apply the dose in the morning to keep your kitten healthy.</p>
+</div>
+</div>
+<!-- Community Interaction -->
+<div class="flex gap-4 bg-white dark:bg-slate-900/50 px-6 py-5 transition-colors hover:bg-primary/5">
+<div class="flex items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<div class="flex justify-between items-start">
+<p class="text-base font-bold leading-tight">Someone liked your post in PurrCommunity</p>
+<span class="text-[10px] font-medium text-slate-400 whitespace-nowrap ml-2">5h ago</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Your post about organic kibble brands is getting a lot of attention!</p>
+</div>
+</div>
+<!-- System Update -->
+<div class="flex gap-4 bg-white dark:bg-slate-900/50 px-6 py-5 transition-colors hover:bg-primary/5">
+<div class="flex items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-500 shrink-0 size-12">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<div class="flex justify-between items-start">
+<p class="text-base font-bold leading-tight">New App Version Available</p>
+<span class="text-[10px] font-medium text-slate-400 whitespace-nowrap ml-2">Yesterday</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Version 2.4 includes improved activity tracking for multi-pet households.</p>
+</div>
+</div>
+<!-- Section Label -->
+<div class="px-6 py-6 pb-2">
+<h2 class="text-xs font-bold uppercase tracking-widest text-primary/60">Earlier</h2>
+</div>
+<!-- Health Reminder 2 -->
+<div class="flex gap-4 bg-white dark:bg-slate-900/50 px-6 py-5 opacity-80 transition-colors hover:bg-primary/5">
+<div class="flex items-center justify-center rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-500 shrink-0 size-12">
+<span class="material-symbols-outlined">vaccines</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<div class="flex justify-between items-start">
+<p class="text-base font-medium leading-tight text-slate-700 dark:text-slate-300">Vet Appointment Confirmed</p>
+<span class="text-[10px] font-medium text-slate-400 whitespace-nowrap ml-2">2 days ago</span>
+</div>
+<p class="text-slate-500 dark:text-slate-500 text-sm mt-1">Your appointment at Happy Paws Clinic for Oliver is set for Friday at 3:00 PM.</p>
+</div>
+</div>
+<!-- Community Interaction 2 -->
+<div class="flex gap-4 bg-white dark:bg-slate-900/50 px-6 py-5 opacity-80 transition-colors hover:bg-primary/5">
+<div class="flex items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">chat_bubble</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<div class="flex justify-between items-start">
+<p class="text-base font-medium leading-tight text-slate-700 dark:text-slate-300">Dr. Smith replied to your question</p>
+<span class="text-[10px] font-medium text-slate-400 whitespace-nowrap ml-2">3 days ago</span>
+</div>
+<p class="text-slate-500 dark:text-slate-500 text-sm mt-1">"The behavior you're describing is quite normal for a cat of Luna's age..."</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-primary/10 px-4 pb-6 pt-3 flex justify-between items-center">
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<p class="text-[10px] font-semibold uppercase tracking-wider">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">pets</span>
+<p class="text-[10px] font-semibold uppercase tracking-wider">Pets</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+<div class="relative">
+<span class="material-symbols-outlined text-2xl fill-[1]">notifications</span>
+<span class="absolute -top-1 -right-1 size-2 bg-pink-500 rounded-full"></span>
+</div>
+<p class="text-[10px] font-semibold uppercase tracking-wider">Alerts</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">forum</span>
+<p class="text-[10px] font-semibold uppercase tracking-wider">Community</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<p class="text-[10px] font-semibold uppercase tracking-wider">Settings</p>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PurrCare Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-path {
+            position: absolute;
+            pointer-events: none;
+        }
+        .gradient-ring {
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #4d0085, #ff85e3) border-box;
+            border: 4px solid transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<header class="flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 p-4 justify-between border-b border-primary/5">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-primary text-xl font-bold leading-tight tracking-tight flex-1 text-center">PurrCare</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="relative flex items-center justify-center rounded-full size-10 bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-pink-500 rounded-full border-2 border-white"></span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center p-6 relative overflow-hidden">
+<div class="relative w-full max-w-sm flex flex-col items-center">
+<div class="relative z-10 w-72 h-72 md:w-80 md:h-80 rounded-full gradient-ring flex flex-col items-center justify-center bg-white dark:bg-slate-900 shadow-2xl shadow-primary/10">
+<div class="flex flex-col items-center gap-4 text-center p-8">
+<div class="w-32 h-32 md:w-40 md:h-40 bg-primary/5 rounded-full flex items-center justify-center overflow-hidden">
+<img alt="Resting Cat" class="w-full h-full object-cover" data-alt="Minimalist illustration of a calm resting cat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWWwC5O3x6Gh-rx_ikaIiF94S3ak5Vo0UTwge1yOLeWwYJuMpBzpNs0igkjibXnMQKK8OTG_TBBR2lIqe0LD4WDKLIIRlD6Rjm6yrYzOaKZ4I5iVgMsdusf5pr7I36gtj-nUs_IVQUfR4Tl_GINdym2eBwnEoAoaS_FDbulGeGgjh5Zbk1H0JCAkh7uQXnd-asT-is7QTBqBk4NTyWFW11DtsOiyGHCw7zhETrs9tzxSM8k2niDTf8u7Kl8OAMFZtbupKkqdrruYwC"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-2xl font-bold tracking-tight">Today's Status: Good</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Luna is resting comfortably</p>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 flex flex-col gap-4 opacity-40">
+<span class="material-symbols-outlined text-pink-400 rotate-12 scale-75">pets</span>
+</div>
+<div class="absolute right-4 -bottom-12 flex flex-col gap-4 opacity-30">
+<span class="material-symbols-outlined text-pink-400 rotate-45 scale-90">pets</span>
+</div>
+<div class="absolute right-16 -bottom-16 flex flex-col gap-4 opacity-20">
+<span class="material-symbols-outlined text-pink-400 rotate-[60deg]">pets</span>
+</div>
+</div>
+<div class="mt-12 w-full grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-primary/5">
+<div class="flex items-center gap-2 text-primary mb-1">
+<span class="material-symbols-outlined text-lg">water_drop</span>
+<span class="text-xs font-bold uppercase tracking-wider">Hydration</span>
+</div>
+<p class="text-xl font-bold">850ml</p>
+<div class="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-primary/5">
+<div class="flex items-center gap-2 text-pink-500 mb-1">
+<span class="material-symbols-outlined text-lg">fitness_center</span>
+<span class="text-xs font-bold uppercase tracking-wider">Activity</span>
+</div>
+<p class="text-xl font-bold">42 mins</p>
+<div class="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full mt-2">
+<div class="bg-pink-500 h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-24 right-6 z-50">
+<button class="flex size-14 cursor-pointer items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<nav class="sticky bottom-0 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/5 px-6 pb-6 pt-3 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<div class="bg-primary/10 rounded-full px-4 py-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+</div>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="px-4 py-1">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<span class="text-[10px] font-medium">Calendar</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="px-4 py-1">
+<span class="material-symbols-outlined">medication</span>
+</div>
+<span class="text-[10px] font-medium">AI Health</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="px-4 py-1">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</nav>
+</body></html>

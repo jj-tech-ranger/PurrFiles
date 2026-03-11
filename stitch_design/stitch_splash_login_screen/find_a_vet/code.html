@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4d0085",
+              "background-light": "#f7f5f8",
+              "background-dark": "#1b0f23",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .paw-pattern {
+            background-image: radial-gradient(circle at 10px 10px, rgba(77, 0, 133, 0.05) 2px, transparent 0);
+            background-size: 32px 32px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto overflow-hidden bg-background-light dark:bg-background-dark shadow-2xl">
+<!-- Top Search Header -->
+<div class="z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md pt-4 pb-2 px-4 sticky top-0 border-b border-primary/10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="text-xs text-primary font-bold uppercase tracking-wider">Your Location</p>
+<p class="text-sm font-semibold">Downtown, San Francisco</p>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/20 p-2 rounded-full shadow-sm border border-primary/10">
+<span class="material-symbols-outlined text-primary">notifications</span>
+</div>
+</div>
+<div class="px-0 py-2">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-primary flex border-none bg-white dark:bg-primary/20 items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-0 border-none bg-white dark:bg-primary/20 focus:border-none h-full placeholder:text-slate-400 dark:placeholder:text-slate-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search for vets, clinics, or specialists..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-2 py-3 overflow-x-auto no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-4 shadow-md transition-all">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<p class="text-xs font-semibold">Open Now</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-primary/20 border border-primary/10 text-slate-700 dark:text-slate-200 px-4">
+<span class="material-symbols-outlined text-sm">emergency</span>
+<p class="text-xs font-semibold">Emergency Care</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-primary/20 border border-primary/10 text-slate-700 dark:text-slate-200 px-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<p class="text-xs font-semibold">Top Rated</p>
+</button>
+</div>
+</div>
+<!-- Map View Area -->
+<div class="relative flex-1 min-h-[400px]">
+<div class="absolute inset-0 z-0 bg-slate-200 dark:bg-slate-800 grayscale-[20%] dark:grayscale-[50%]" data-alt="Map view showing local area with veterinary clinics pins" data-location="San Francisco" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg5pqQdfRtasE51mV56-C-qu9OMwKh6VLLf-pZ0JLy5koJqh02pvNxirDtyZX5R0gRAGv8DUNxoxj0IsSkExwiIDLXVdgl1aSv96WPmY9yEMMyuCFijqbJsQnJhNhfJxOzknaDW2JQ8G5yAGScgJOVxWJBVXVgIeaHWwfwOOWLYKfW7y-au8PWzQYoHLHtMfx-Lc3MEeYZ5IcIxV6rcRtJR8Z1scoNW3F-dYtMVlnG65JBY18Wi8_oovnP75UPR2gPqemcTNXTytR2"); background-size: cover;'>
+</div>
+<!-- Custom Pins -->
+<div class="absolute top-[30%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="bg-primary p-1.5 rounded-full shadow-lg border-2 border-white animate-bounce">
+<span class="material-symbols-outlined text-white text-xl">pets</span>
+</div>
+<div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white px-2 py-1 rounded shadow-md text-[10px] font-bold whitespace-nowrap">Happy Paws</div>
+</div>
+<div class="absolute top-[55%] left-[65%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="bg-primary/80 p-1.5 rounded-full shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-white text-xl">local_hospital</span>
+</div>
+<div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white px-2 py-1 rounded shadow-md text-[10px] font-bold whitespace-nowrap">City Vet Clinic</div>
+</div>
+<div class="absolute top-[20%] left-[75%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="bg-primary/80 p-1.5 rounded-full shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-white text-xl">pets</span>
+</div>
+</div>
+<!-- User Location Indicator -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+<div class="relative flex items-center justify-center">
+<div class="absolute w-12 h-12 bg-primary/20 rounded-full animate-ping"></div>
+<div class="w-4 h-4 bg-primary border-2 border-white rounded-full shadow-lg"></div>
+</div>
+</div>
+</div>
+<!-- Draggable-style Bottom Sheet -->
+<div class="z-20 bg-background-light dark:bg-background-dark rounded-t-xl shadow-[0_-8px_30px_rgba(0,0,0,0.12)] border-t border-primary/5 flex flex-col max-h-[60%] overflow-hidden relative">
+<div class="flex justify-center py-3">
+<div class="w-12 h-1.5 bg-slate-300 dark:bg-slate-700 rounded-full"></div>
+</div>
+<div class="px-4 pb-2 flex justify-between items-center">
+<h3 class="text-lg font-bold">Recommended Vets</h3>
+<span class="text-sm text-primary font-medium">12 nearby</span>
+</div>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto px-4 pb-24 space-y-4 paw-pattern">
+<!-- Clinic Card 1 -->
+<div class="bg-white dark:bg-primary/10 p-3 rounded-xl flex gap-4 shadow-sm border border-primary/5">
+<div class="w-24 h-24 rounded-lg bg-center bg-cover shrink-0" data-alt="Modern veterinary clinic exterior with large windows" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARtSjKFGI8NnjAsPU2dOwXBUf5TBGjBCF9Em3P1NL94ee_sHbcLP2UYDbtdcyoZ-gUW2pQ36jfq_DmEDt8aVijbK9ZTHf3VV-7jYXbRa0Ud2gOvUkKhpXz7OzkR8KwGxVAWpvgu497eOqmRimxLVON87_FrYNmeWs4huIC487vXvsQqqK-MK4FouSjEa9NClY9aJ8Qt85_atqDC5yMftLHI0k5KQ-fATtU4L6YS9kjy-MJAlL5IQAO2DW7mMhB1LQvID0CMshTPWQM");'>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 leading-tight">Happy Paws Veterinary</h4>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-amber-400 text-sm fill-current">star</span>
+<span class="text-sm font-bold">4.8</span>
+<span class="text-slate-400 dark:text-slate-500 text-xs">(1.2k reviews)</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">directions_walk</span>
+<span class="text-xs font-medium">1.2 miles away</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 rounded-full font-bold">OPEN</span>
+</div>
+</div>
+</div>
+<!-- Clinic Card 2 -->
+<div class="bg-white dark:bg-primary/10 p-3 rounded-xl flex gap-4 shadow-sm border border-primary/5">
+<div class="w-24 h-24 rounded-lg bg-center bg-cover shrink-0" data-alt="Veterinary reception area with friendly staff" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqOhVxjPSzCnoNbgKXx_kxFpeFxxNwGXe68E2MRC814SOVrt42TT5fcx6HAWMYQJ-FMhjOw06Md0E2kLI42dQtLsGxsTpAwW895nesSicQfnUbWHlM-XmNoYkU5qpGNiMbrCjT_zaKVcErfAtWsbSWRCTu6xt4r76EE1jB55q42_8_vCZUuMQ2wtWWEl_9GNbAaYREOTMOOFkW9sC7I3_cXtwvQa9N3LgWyv9sMaO_Ne5vYOsA-4ZjqGclQVjKl423qjg39dEcqmIu");'>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 leading-tight">City Vet Care Center</h4>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-amber-400 text-sm fill-current">star</span>
+<span class="text-sm font-bold">4.6</span>
+<span class="text-slate-400 dark:text-slate-500 text-xs">(856 reviews)</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">directions_car</span>
+<span class="text-xs font-medium">2.4 miles away</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 rounded-full font-bold">24H EMERGENCY</span>
+</div>
+</div>
+</div>
+<!-- Clinic Card 3 -->
+<div class="bg-white dark:bg-primary/10 p-3 rounded-xl flex gap-4 shadow-sm border border-primary/5">
+<div class="w-24 h-24 rounded-lg bg-center bg-cover shrink-0" data-alt="Cozy pet clinic specialized in cat care" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgvE7TaA4Hzcye2sjm8oXgbMdbQNJ_bGGrVGTC_ReXgs7_1p5tsSGwek5dzLjCjhoPoTpsO-F9xxHpq-JKxBiXr04AbY_wl8UvacJTfNdDVS5w9TA20nDvnFrzpWUUMv7_jSUWmt9tq-k9NPppkP8ClwEGkv_FxuyVXq99iCBRtZXT_wf_IzmNJkxu9R06mWB6_YGL8UMpQyxYJJ9kFlTh-SAEkbe1i-2s9VnrMoRtgIcWCn_eiQc7CbNE39QgaprA-sy8zJ6aTqhW");'>
+</div>
+<div class="flex-1 flex flex-col justify-between py-0.5">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 leading-tight">Feline &amp; Friends Clinic</h4>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-amber-400 text-sm fill-current">star</span>
+<span class="text-sm font-bold">4.9</span>
+<span class="text-slate-400 dark:text-slate-500 text-xs">(2.1k reviews)</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">directions_walk</span>
+<span class="text-xs font-medium">0.8 miles away</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 rounded-full font-bold">OPEN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 w-full max-w-md bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-primary/10 z-30 pb-4 pt-2">
+<div class="flex gap-2 px-4 h-16">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-semibold leading-normal">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-current">explore</span>
+<p class="text-[10px] font-bold leading-normal">Find Vet</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<p class="text-[10px] font-semibold leading-normal">Calendar</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 relative" href="#">
+<div class="bg-primary/10 p-2 -mt-4 rounded-full border-2 border-background-light dark:border-background-dark shadow-lg">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<p class="text-[10px] font-semibold leading-normal">AI Health</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-semibold leading-normal">Profile</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

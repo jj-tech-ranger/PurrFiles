@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PurrCommunity - Feed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto bg-white dark:bg-slate-900 shadow-xl overflow-x-hidden">
+<header class="sticky top-0 z-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-primary text-xl font-bold leading-tight tracking-tight flex-1 text-center">PurrCommunity</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex size-10 cursor-pointer items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+<div class="px-4 pb-4">
+<label class="flex flex-col w-full">
+<div class="flex w-full items-stretch rounded-xl h-12 bg-primary/5 dark:bg-primary/20 border border-primary/10">
+<div class="text-primary/60 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:ring-0 text-slate-900 dark:text-slate-100 placeholder:text-primary/40 px-3 text-base font-medium" placeholder="Find breeds or topics" value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-2 px-4 pb-4 overflow-x-auto no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary text-white px-4 text-sm font-semibold">
+<span>All</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/10 text-primary px-4 text-sm font-semibold border border-primary/5">
+<span>Health</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/10 text-primary px-4 text-sm font-semibold border border-primary/5">
+<span>Nutrition</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/10 text-primary px-4 text-sm font-semibold border border-primary/5">
+<span>Playtime</span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-6 pb-24">
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden border border-primary/10 bg-white dark:bg-slate-800 shadow-sm">
+<div class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover" data-alt="A cute ginger kitten looking curiously at the camera" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIEIrklq7jTtLkEUXA5xBaT6mETjeR4mnwJeDVlXn7XSE4NQvpzmu4kQpJT95YPuDEF1XWABocwjx71PtXzEVX9V_HAzOk7KqNx5OyMRX1fuex3X9sbtE7ntSRSLdPp8OFH6OC9MEa0Xu9JPigjy3afA8O267ZSvSC910a2lpNvvAk06xA3Otb7Q_1DfV3j78_WCUiv9NWMDVp6Iv8ONGM1X_28HKUhPssGxXNdaWvHhzhN2VmsgEryxNxUHiX16Yq_gm18Kgtwcki");'></div>
+<div class="flex flex-col p-4 gap-3">
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full bg-primary/20 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-lg">person</span>
+</div>
+<span class="text-sm font-bold text-slate-700 dark:text-slate-200">Sarah &amp; Luna</span>
+<span class="text-xs text-slate-400">• 2h ago</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">Luna had her first vet visit today! She was so brave during the shots. Any recommendations for treats that help with teething?</p>
+<div class="flex items-center justify-between pt-2 border-t border-primary/5">
+<div class="flex gap-4">
+<button class="flex items-center gap-1.5 text-primary font-bold text-sm bg-primary/10 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+<span>24 Paws Up</span>
+</button>
+<button class="flex items-center gap-1 text-slate-500 font-medium text-sm">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+<span>12</span>
+</button>
+</div>
+<button class="text-slate-400">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden border border-primary/10 bg-white dark:bg-slate-800 shadow-sm">
+<div class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover" data-alt="A majestic fluffy grey cat sitting on a windowsill" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQGc6jtQIgVKrbxixTB6NfnhXUBUZIEviQ1wEGanbvuN_OP_Spt_MeZ5sFONFc6PAAwpg3dzfs_decE5JA1Zvk_ngL-SUCeNFIhNWv2bb4vWAhDAkOsPToufDcQOyzJaAXXl91oqbYPa9DrObfA4__Emlh0sJ9E1McIpzoOKkKOA2DbJmt5eIpLcIPoqPcNxUnZ1IFvQ-7WAYuUNHK13TeJPonmR8aiL7xa_40mHARaeoZIupHms44LGfEgE1hlxJzkrn7p-qdu3Bc");'></div>
+<div class="flex flex-col p-4 gap-3">
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full bg-primary/20 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-lg">person</span>
+</div>
+<span class="text-sm font-bold text-slate-700 dark:text-slate-200">Tom's Pride</span>
+<span class="text-xs text-slate-400">• 5h ago</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">Sunlight bathing is the highlight of Oscar's morning. Look at that glow! #CatLife #LazyMorning</p>
+<div class="flex items-center justify-between pt-2 border-t border-primary/5">
+<div class="flex gap-4">
+<button class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 font-bold text-sm bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+<span>56 Paws Up</span>
+</button>
+<button class="flex items-center gap-1 text-slate-500 font-medium text-sm">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+<span>5</span>
+</button>
+</div>
+<button class="text-slate-400">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden border border-primary/10 bg-white dark:bg-slate-800 shadow-sm">
+<div class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover" data-alt="A tuxedo cat wearing a small yellow bowtie" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAspHVRiGuxc5jhfIjhPJzsQ2nSe24cPyFlZnTa-mwqWQI1eiFKDH0JYsxliUFuin0uTyBBznE67sSs-0jnfDmcl_6wVT3R43let4qmjS3tV4CLvtgHfo7B9fbppnzQawVIbaOUxWMwjJROckCriTunoc1oUrdJjUW0RxEppvbVJgslX4E1NI8ZyOD_F1GKvbFhKoB-73rmgHkLXIO43u91g6ldO1h4X6PIkopOoX6CP2-bYuC3Vrw4NegSppgWiJTinGLSU51h6cOO");'></div>
+<div class="flex flex-col p-4 gap-3">
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full bg-primary/20 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-lg">person</span>
+</div>
+<span class="text-sm font-bold text-slate-700 dark:text-slate-200">DapperFeline</span>
+<span class="text-xs text-slate-400">• 1d ago</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">Ready for the weekend garden party! 🎀 Does anyone else dress up their cats for special occasions?</p>
+<div class="flex items-center justify-between pt-2 border-t border-primary/5">
+<div class="flex gap-4">
+<button class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 font-bold text-sm bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+<span>102 Paws Up</span>
+</button>
+<button class="flex items-center gap-1 text-slate-500 font-medium text-sm">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+<span>31</span>
+</button>
+</div>
+<button class="text-slate-400">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<button class="fixed bottom-24 right-6 size-14 bg-primary text-white rounded-full shadow-lg flex items-center justify-center z-30 ring-4 ring-white dark:ring-slate-900">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-primary/10 px-4 py-2 z-40">
+<div class="flex justify-between items-center">
+<a class="flex flex-1 flex-col items-center gap-1 text-primary/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-[1]">groups</span>
+<span class="text-[10px] font-bold">Community</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary/60" href="#">
+<span class="material-symbols-outlined">ecg_heart</span>
+<span class="text-[10px] font-bold">Health</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary/60" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

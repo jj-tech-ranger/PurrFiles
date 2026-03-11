@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>PurrCare Plus | Premium Feline Health</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-gradient-to-b from-primary/10 to-background-light dark:to-background-dark overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="flex items-center p-4 pb-2 justify-between">
+<div class="text-primary dark:text-primary/80 flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-2xl">close</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Go Plus</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-xl h-12 bg-transparent text-primary dark:text-primary/80">
+<span class="material-symbols-outlined text-2xl">help</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="flex flex-col items-center px-4 py-8 md:py-12">
+<div class="mb-6 rounded-full bg-primary/10 p-4">
+<span class="material-symbols-outlined text-primary text-5xl">pets</span>
+</div>
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-4xl md:text-5xl font-extrabold leading-tight text-center pb-3">PurrCare Plus</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-relaxed max-w-md text-center">Unlock premium features for your feline friend's health and happiness.</p>
+</header>
+<!-- Features Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 max-w-4xl mx-auto w-full">
+<div class="flex flex-1 gap-4 rounded-xl border border-primary/10 bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-5 shadow-sm">
+<div class="bg-primary/10 rounded-lg p-3 h-fit">
+<span class="material-symbols-outlined text-primary">stethoscope</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Unlimited AI Symptom Checks</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Instant peace of mind 24/7 with our advanced AI triage system.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-primary/10 bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-5 shadow-sm">
+<div class="bg-primary/10 rounded-lg p-3 h-fit">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Detailed Health Trends &amp; Analytics</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Deep dive into activity patterns and historical wellness data.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-primary/10 bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-5 shadow-sm">
+<div class="bg-primary/10 rounded-lg p-3 h-fit">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Early Access</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Be the first to try new diagnostic tools and features.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-primary/10 bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-5 shadow-sm">
+<div class="bg-primary/10 rounded-lg p-3 h-fit">
+<span class="material-symbols-outlined text-primary">block</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Ad-Free Experience</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Focus entirely on your pet without any interruptions.</p>
+</div>
+</div>
+</section>
+<!-- Pricing Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-8 max-w-4xl mx-auto w-full">
+<!-- Monthly Card -->
+<div class="flex flex-1 flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-800 p-8 shadow-md">
+<div class="flex flex-col gap-2">
+<h4 class="text-primary font-bold text-sm uppercase tracking-wider">Monthly</h4>
+<div class="flex items-baseline gap-1">
+<span class="text-slate-900 dark:text-slate-100 text-4xl font-black tracking-tight">$4.99</span>
+<span class="text-slate-500 dark:text-slate-400 text-base font-medium">/ month</span>
+</div>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        Unlimited symptom checks
+                    </li>
+<li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        Health trend analytics
+                    </li>
+</ul>
+</div>
+<!-- Yearly Card -->
+<div class="relative flex flex-1 flex-col gap-6 rounded-xl border-2 border-primary bg-white dark:bg-slate-800 p-8 shadow-xl">
+<div class="absolute -top-3 right-8 rounded-full bg-primary px-4 py-1">
+<span class="text-white text-xs font-bold uppercase tracking-widest">Best Value</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-primary font-bold text-sm uppercase tracking-wider">Yearly</h4>
+<div class="flex items-baseline gap-1">
+<span class="text-slate-900 dark:text-slate-100 text-4xl font-black tracking-tight">$39.99</span>
+<span class="text-slate-500 dark:text-slate-400 text-base font-medium">/ year</span>
+</div>
+<p class="text-green-600 text-xs font-semibold">Save over 30% annually</p>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        Everything in Monthly
+                    </li>
+<li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        Priority expert support
+                    </li>
+</ul>
+</div>
+</section>
+<!-- CTA Section -->
+<footer class="mt-auto px-4 pb-12 flex flex-col items-center">
+<button class="w-full max-w-md flex items-center justify-center rounded-xl h-16 bg-primary text-white text-lg font-extrabold shadow-lg shadow-primary/25 hover:bg-primary/90 transition-colors">
+                Start Free Trial
+            </button>
+<p class="mt-4 text-slate-500 dark:text-slate-400 text-xs text-center">
+                Cancel anytime. 7-day free trial included with all plans.
+            </p>
+</footer>
+<!-- Decorative elements -->
+<div class="absolute top-0 right-0 -z-10 opacity-20 dark:opacity-10 pointer-events-none transform translate-x-1/4 -translate-y-1/4">
+<img class="w-[600px] h-[600px] rounded-full blur-3xl" data-alt="Soft purple abstract geometric shapes background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALaMrlUQuMg0QxqJIBvdAo3bEaobnhUB67E3PCQkuAQ3oZGcvAeEngVVJyIhy9IDqscVLFVR_OTt0S8sbh3WS-o0F6jo1bXYNBI8bHqPbT3NGIn8HeLMNScTFgxws6nT93bWN1Bw_xbcScEHLbTnYJj9cdbMPbC38guKY7vsqM3ZpqOufGux2Dw4-XyBKM2tXahCa4lze0NJGZ2SBTx7TDknV06TdFH7xXJV3lMyu8CIwpDwGa7SK2-3uCm9CTn7lxpEmakXK5QJkP"/>
+</div>
+</div>
+</body></html>

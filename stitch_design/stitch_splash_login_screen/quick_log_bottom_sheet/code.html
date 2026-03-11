@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>PurrCare Quick Log</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<!-- Dashboard Background Layer -->
+<div class="fixed inset-0 z-0 p-4 flex flex-col gap-6">
+<header class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="Close up photo of a ginger cat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoBPbcqFP9BVpoT-TqhRWiv0spnAWCPwjWxp_HF-nlqtCWLs6YJAQ-dOFVehIMh2bPznTlHDVnp4LoKNrMDnTe_6AYSNdy77ySmlpwdhD3Xcmbi9fBq1f5HTbZkXJCDOpk1Q3toqe4VqiNJWnEt7PH5UPOAgM0dISkkrAUzNdP2G9u1n9Pzyczp1VXadJnctnMVL41F93dQDSwB_LrltfYQqhNJBwa-kHAzxpo4dXPVDuxs3QqtSyo9BAOZ0z3A-inZEn6H1avoTgL"/>
+</div>
+<div>
+<h1 class="text-xl font-bold text-primary dark:text-primary/90">PurrCare</h1>
+<p class="text-xs text-slate-500">Good morning, Whiskers!</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-2">restaurant</span>
+<p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Last Fed</p>
+<p class="text-lg font-bold">2h ago</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-2">water_drop</span>
+<p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Hydration</p>
+<p class="text-lg font-bold">80%</p>
+</div>
+</div>
+<div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+<h2 class="font-bold mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">analytics</span>
+                Weekly Health
+            </h2>
+<div class="h-32 w-full flex items-end justify-between gap-2 px-2">
+<div class="bg-primary/20 w-full h-1/2 rounded-t-md"></div>
+<div class="bg-primary/40 w-full h-3/4 rounded-t-md"></div>
+<div class="bg-primary w-full h-full rounded-t-md"></div>
+<div class="bg-primary/30 w-full h-2/3 rounded-t-md"></div>
+<div class="bg-primary/60 w-full h-5/6 rounded-t-md"></div>
+</div>
+</div>
+</div>
+<!-- Backdrop Overlay -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-10"></div>
+<!-- Bottom Sheet Component -->
+<div class="fixed inset-x-0 bottom-0 z-20 flex flex-col bg-white dark:bg-slate-900 rounded-t-xl shadow-[0_-8px_30px_rgb(77,0,133,0.15)] max-h-[90vh] overflow-hidden">
+<!-- Handle -->
+<div class="flex h-6 w-full items-center justify-center py-4">
+<div class="h-1.5 w-12 rounded-full bg-primary/20"></div>
+</div>
+<!-- Quick Log State (Initial) -->
+<div class="px-6 pb-10" id="quick-log-menu">
+<h2 class="text-primary text-lg font-bold text-center mb-6">Quick Log</h2>
+<div class="grid grid-cols-2 gap-4">
+<!-- Food/Water Button -->
+<button class="flex flex-col items-center justify-center gap-3 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl hover:bg-primary/10 transition-colors border border-primary/10">
+<div class="w-14 h-14 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-bold">Food/Water</span>
+</button>
+<!-- Litter Box Button -->
+<button class="flex flex-col items-center justify-center gap-3 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl hover:bg-primary/10 transition-colors border border-primary/10">
+<div class="w-14 h-14 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">pets</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-bold">Litter Box</span>
+</button>
+<!-- Mood Button -->
+<button class="flex flex-col items-center justify-center gap-3 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl hover:bg-primary/10 transition-colors border border-primary/10">
+<div class="w-14 h-14 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">mood</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-bold">Mood</span>
+</button>
+<!-- Weight Button -->
+<button class="flex flex-col items-center justify-center gap-3 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl hover:bg-primary/10 transition-colors border border-primary/10">
+<div class="w-14 h-14 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">monitor_weight</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-bold">Weight</span>
+</button>
+</div>
+</div>
+<!-- Log Food Form State (Active Section) -->
+<div class="px-6 pb-8 border-t border-primary/10 pt-4 bg-background-light/50 dark:bg-background-dark/50" id="food-log-form">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Log Food &amp; Water</h3>
+<button class="text-slate-400">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4">
+<!-- Dropdown -->
+<div>
+<label class="block text-xs font-bold text-primary uppercase tracking-wider mb-2">Food Brand</label>
+<div class="relative">
+<select class="w-full bg-white dark:bg-slate-800 border border-primary/10 rounded-lg p-3 appearance-none focus:ring-2 focus:ring-primary/20 outline-none">
+<option>Royal Canin Kitten</option>
+<option>Purina Pro Plan</option>
+<option>Hill's Science Diet</option>
+<option>Blue Buffalo</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-primary/60">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- Number Display -->
+<div class="bg-white dark:bg-slate-800 border-2 border-primary rounded-xl p-4 flex flex-col items-center justify-center">
+<span class="text-xs font-bold text-primary uppercase">Amount (grams)</span>
+<span class="text-4xl font-bold text-slate-900 dark:text-slate-100">85<span class="animate-pulse">|</span></span>
+</div>
+<!-- Numeric Keypad -->
+<div class="grid grid-cols-3 gap-2 py-2">
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">1</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">2</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">3</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">4</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">5</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">6</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">7</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">8</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">9</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white/50 dark:bg-slate-800/50">.</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white dark:bg-slate-800 shadow-sm">0</button>
+<button class="h-12 flex items-center justify-center font-bold text-xl rounded-lg bg-white/50 dark:bg-slate-800/50">
+<span class="material-symbols-outlined">backspace</span>
+</button>
+</div>
+<!-- Save Button -->
+<button class="w-full bg-primary py-4 rounded-xl text-white font-bold text-lg shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">check_circle</span>
+                    Save Log
+                </button>
+</div>
+</div>
+</div>
+</body></html>

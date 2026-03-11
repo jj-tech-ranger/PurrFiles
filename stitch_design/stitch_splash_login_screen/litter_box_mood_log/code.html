@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>PurrCare - Litter Box Log</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<header class="bg-white dark:bg-slate-900 px-4 pt-6 pb-4">
+<div class="flex items-center justify-between mb-6">
+<button class="text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold">Litter Box Log</h1>
+<div class="w-6"></div>
+</div>
+<h2 class="text-2xl font-bold text-center mt-4">How was the litter box today?</h2>
+</header>
+<main class="flex-1 px-4 py-6 space-y-4">
+<!-- Normal Card -->
+<button class="w-full flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-xl shadow-sm border-2 border-transparent hover:border-primary transition-colors text-left group">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-lg">Normal</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Everything looks healthy</p>
+</div>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-200 group-focus:bg-primary group-focus:border-primary flex items-center justify-center">
+<div class="size-2 bg-white rounded-full"></div>
+</div>
+</button>
+<!-- Needs Cleaning Card -->
+<button class="w-full flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-xl shadow-sm border-2 border-transparent hover:border-primary transition-colors text-left group">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">cleaning_services</span>
+</div>
+<div>
+<p class="font-bold text-lg">Needs Cleaning</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Time for a quick scoop</p>
+</div>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-200 flex items-center justify-center">
+<div class="size-2 bg-white rounded-full"></div>
+</div>
+</button>
+<!-- Abnormal Card -->
+<div class="space-y-3">
+<button class="w-full flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-xl shadow-sm border-2 border-orange-200 dark:border-orange-900/50 hover:border-orange-400 transition-colors text-left group">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600">
+<span class="material-symbols-outlined text-3xl">warning</span>
+</div>
+<div>
+<p class="font-bold text-lg">Abnormal (See AI)</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Something seems different</p>
+</div>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-200 flex items-center justify-center">
+<div class="size-2 bg-white rounded-full"></div>
+</div>
+</button>
+<!-- AI Prompt Banner -->
+<div class="bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-lg p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">auto_awesome</span>
+<div class="text-sm">
+<p class="font-medium text-primary">Would you like to ask the AI Checker about this?</p>
+<a class="text-primary font-bold underline mt-1 inline-block" href="#">Start AI consultation</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="p-4 bg-white dark:bg-slate-900 space-y-4">
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 active:scale-[0.98] transition-transform">
+            Save Entry
+        </button>
+<!-- Navigation Bar -->
+<nav class="flex justify-between items-center pt-2">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">description</span>
+<span class="text-[10px] font-medium">Logs</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-[10px] font-medium">AI Help</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</body></html>

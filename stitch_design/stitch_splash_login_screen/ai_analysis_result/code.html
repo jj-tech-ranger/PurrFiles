@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PurrCare AI Health Analysis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<div class="relative flex h-auto min-h-screen w-full max-w-md mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center bg-white dark:bg-slate-900 p-4 sticky top-0 z-10 border-b border-primary/10">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">AI Health Analysis</h2>
+</div>
+<!-- Warning Banner -->
+<div class="p-4">
+<div class="flex items-center gap-3 rounded-xl bg-yellow-100 border border-yellow-200 p-4">
+<span class="material-symbols-outlined text-yellow-700">warning</span>
+<p class="text-yellow-800 text-sm font-bold leading-tight">
+                    Unofficial Insight: <span class="font-medium">Always consult a licensed veterinarian.</span>
+</p>
+</div>
+</div>
+<!-- Main Content Card -->
+<div class="px-4 pb-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-primary/5 overflow-hidden">
+<!-- Pet Header -->
+<div class="p-5 border-b border-primary/5 flex items-center gap-4">
+<div class="size-14 rounded-full bg-center bg-cover border-2 border-primary/20" data-alt="Portrait of a fluffy calico cat named Luna" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4DVBTtNjcSRoYsq5pq5uQhREPqrsEsCigS7wLWx-3tp-t0NUy5DMXtfnzpSLzJiZayPMdEM9xfK6YMeJHNpA_B1WuYAzn8TCshE-RNdvcAPixzQjKIJQ7ygk7-6qdyfyGtZVYT1dfEykK2lc9-wqHZxKEUigcYjlzf9ZZUZyHv8a8szkhRd11QBUE82FRu-g5pmGVYDxPlxPrQnBN_LjeM93IA62AGCbbi4zjnPJUAvci8zggPJ1g6vztBcHAGW4HJrQjGgCuMC1E");'>
+</div>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Analysis for Luna</h3>
+<p class="text-slate-500 text-sm">Symptom: Occasional coughing</p>
+</div>
+</div>
+<!-- Analysis Body -->
+<div class="p-5 space-y-6">
+<!-- AI Summary -->
+<div class="bg-primary/5 rounded-lg p-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm fill">auto_awesome</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Gemini AI Insight</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                            Based on your description of Luna's cough, it appears to be a dry, hacking sound. This is often associated with respiratory irritation rather than fluid accumulation.
+                        </p>
+</div>
+<!-- Possible Causes -->
+<div>
+<h4 class="text-base font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">biotech</span>
+                            Possible Causes
+                        </h4>
+<ul class="space-y-3">
+<li class="flex gap-3">
+<span class="size-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<p class="text-sm text-slate-600 dark:text-slate-400"><span class="font-bold text-slate-800 dark:text-slate-200">Hairballs:</span> Irritation in the esophagus or throat during grooming.</p>
+</li>
+<li class="flex gap-3">
+<span class="size-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<p class="text-sm text-slate-600 dark:text-slate-400"><span class="font-bold text-slate-800 dark:text-slate-200">Feline Asthma:</span> Chronic inflammation of the small airways in the lungs.</p>
+</li>
+<li class="flex gap-3">
+<span class="size-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<p class="text-sm text-slate-600 dark:text-slate-400"><span class="font-bold text-slate-800 dark:text-slate-200">Environmental Allergens:</span> Dust, strong perfumes, or household cleaners.</p>
+</li>
+</ul>
+</div>
+<!-- Things to Monitor -->
+<div>
+<h4 class="text-base font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+                            Things to Monitor
+                        </h4>
+<div class="grid grid-cols-1 gap-2">
+<div class="flex items-center justify-between p-3 rounded-lg border border-primary/10 bg-background-light dark:bg-slate-800">
+<span class="text-sm text-slate-700 dark:text-slate-300">Frequency of coughing</span>
+<span class="material-symbols-outlined text-primary">check_box_outline_blank</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg border border-primary/10 bg-background-light dark:bg-slate-800">
+<span class="text-sm text-slate-700 dark:text-slate-300">Wheezing or heavy breathing</span>
+<span class="material-symbols-outlined text-primary">check_box_outline_blank</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg border border-primary/10 bg-background-light dark:bg-slate-800">
+<span class="text-sm text-slate-700 dark:text-slate-300">Changes in appetite</span>
+<span class="material-symbols-outlined text-primary">check_box_outline_blank</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="px-4 pb-24 space-y-4">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">event_note</span>
+                Mark as Logged Event
+            </button>
+<a class="w-full flex items-center justify-center gap-2 py-2 text-primary font-bold text-sm" href="#">
+<span class="material-symbols-outlined text-lg">near_me</span>
+                Find a Vet Near Me
+            </a>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md flex gap-2 border-t border-primary/10 bg-white dark:bg-slate-900 px-4 pb-4 pt-2 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Logs</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill">auto_awesome</span>
+<p class="text-[10px] font-bold leading-normal tracking-[0.015em]">AI Health</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</body></html>

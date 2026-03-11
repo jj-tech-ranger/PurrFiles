@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4d0085",
+                        "accent-pink": "#ff85c0",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#1b0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex justify-center">
+<div class="relative flex h-full min-h-screen w-full max-w-md flex-col bg-white dark:bg-slate-950 shadow-2xl overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center bg-white dark:bg-slate-950 p-4 pb-2 justify-between">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Weight &amp; Growth Chart</h2>
+</div>
+<!-- Pet Profile Summary -->
+<div class="px-4 py-4 flex items-center gap-3">
+<div class="size-12 rounded-full overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover" data-alt="Cute ginger cat portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9i4E6zfYTGiKEyvOjblL8UAuJf_GFEHGPD7buzRlsqt-1Qo2r70WKUBcjDmJKTKJbOUileNmnnX2EZDaHtwS--nNY-oaylOHRFDISaz8TNYEzmz7dfMoczBKM-Z2QQImeycfN4m6fTJbKYXaaWNzh-XXVzscYiLgfLVOnzp9knDNRK4TygTIfqQP2Ek2h2ZtPEARNvDxiAOAnhIDt7HEFKM212yjG1gvJ3AVa_wYyJ1Pt3Z1cZEA8esc86r8FuTZnJ1zS3kVBB6N"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Luna</h3>
+<p class="text-sm text-slate-500">Domestic Shorthair • 2 years</p>
+</div>
+</div>
+<!-- Time Selector -->
+<div class="pb-3">
+<div class="flex border-b border-slate-100 dark:border-slate-800 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-400 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">1W</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-400 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">1M</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">3M</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-400 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">1Y</p>
+</a>
+</div>
+</div>
+<!-- Main Chart Section -->
+<div class="flex flex-col gap-2 px-4 py-6">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-slate-500 text-sm font-medium leading-normal">Current Weight</p>
+<div class="flex items-baseline gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-3xl font-bold leading-tight">4.2 <span class="text-lg font-medium text-slate-400">kg</span></p>
+<p class="text-emerald-600 text-sm font-bold">+0.2kg this month</p>
+</div>
+</div>
+<div class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Healthy Range</div>
+</div>
+<!-- Custom Graph Area -->
+<div class="relative w-full aspect-[4/3] mt-4">
+<!-- Grid Lines (Y-Axis) -->
+<div class="absolute inset-0 flex flex-col justify-between py-2 border-l border-b border-slate-200 dark:border-slate-800">
+<div class="w-full border-t border-slate-100 dark:border-slate-900 flex justify-end"><span class="text-[10px] text-slate-400 -mr-6">5kg</span></div>
+<div class="w-full border-t border-slate-100 dark:border-slate-900 flex justify-end"><span class="text-[10px] text-slate-400 -mr-6">4kg</span></div>
+<div class="w-full border-t border-slate-100 dark:border-slate-900 flex justify-end"><span class="text-[10px] text-slate-400 -mr-6">3kg</span></div>
+<div class="w-full border-t border-slate-100 dark:border-slate-900 flex justify-end"><span class="text-[10px] text-slate-400 -mr-6">2kg</span></div>
+<div class="w-full border-t border-slate-100 dark:border-slate-900 flex justify-end"><span class="text-[10px] text-slate-400 -mr-6">1kg</span></div>
+</div>
+<!-- SVG Graph Line -->
+<svg class="absolute inset-0 w-full h-full overflow-visible" viewbox="0 0 400 200">
+<!-- Area Fill -->
+<path d="M 0 160 Q 50 150 100 130 Q 150 140 200 110 Q 250 120 300 80 Q 350 90 400 60 V 200 H 0 Z" fill="url(#purpleGradient)" opacity="0.1"></path>
+<!-- Bold Purple Line -->
+<path d="M 0 160 Q 50 150 100 130 Q 150 140 200 110 Q 250 120 300 80 Q 350 90 400 60" fill="none" stroke="#4d0085" stroke-linecap="round" stroke-width="4"></path>
+<!-- Pink Paw Data Points -->
+<g fill="#ff85c0">
+<circle cx="0" cy="160" r="5"></circle>
+<circle cx="100" cy="130" r="5"></circle>
+<circle cx="200" cy="110" r="5"></circle>
+<!-- Active Point -->
+<circle cx="300" cy="80" r="7" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="400" cy="60" r="5"></circle>
+</g>
+<!-- Simple Paw Icons Representation -->
+<text dominant-baseline="middle" fill="white" font-family="Material Symbols Outlined" font-size="12" text-anchor="middle" x="300" y="82">pets</text>
+<text dominant-baseline="middle" fill="white" font-family="Material Symbols Outlined" font-size="8" text-anchor="middle" x="0" y="162">pets</text>
+<text dominant-baseline="middle" fill="white" font-family="Material Symbols Outlined" font-size="8" text-anchor="middle" x="100" y="132">pets</text>
+<text dominant-baseline="middle" fill="white" font-family="Material Symbols Outlined" font-size="8" text-anchor="middle" x="200" y="112">pets</text>
+<text dominant-baseline="middle" fill="white" font-family="Material Symbols Outlined" font-size="8" text-anchor="middle" x="400" y="62">pets</text>
+<defs>
+<lineargradient id="purpleGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4d0085"></stop>
+<stop offset="100%" stop-color="#4d0085" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Tooltip -->
+<div class="absolute top-[35px] left-[245px] -translate-x-1/2 -translate-y-full mb-2 bg-slate-900 text-white text-[11px] px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg">
+<span class="font-bold">4.2 kg</span> - Oct 15
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-slate-900"></div>
+</div>
+</div>
+<!-- X-Axis Labels -->
+<div class="flex justify-between px-2 pt-2">
+<p class="text-slate-400 text-[10px] font-bold uppercase">Jul</p>
+<p class="text-slate-400 text-[10px] font-bold uppercase">Aug</p>
+<p class="text-slate-400 text-[10px] font-bold uppercase">Sep</p>
+<p class="text-slate-900 dark:text-slate-100 text-[10px] font-bold uppercase underline decoration-primary underline-offset-4">Oct</p>
+<p class="text-slate-400 text-[10px] font-bold uppercase">Nov</p>
+</div>
+</div>
+<!-- Stats Cards -->
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-4 bg-background-light dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-lg">flag</span>
+<p class="text-slate-600 dark:text-slate-400 text-xs font-medium uppercase tracking-tight">Goal Weight</p>
+</div>
+<p class="text-slate-900 dark:text-slate-100 tracking-tight text-xl font-bold leading-tight">4.5 kg</p>
+<div class="w-full bg-slate-200 dark:bg-slate-700 h-1 rounded-full mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-4 bg-background-light dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2 text-accent-pink">
+<span class="material-symbols-outlined text-lg">monitor_weight</span>
+<p class="text-slate-600 dark:text-slate-400 text-xs font-medium uppercase tracking-tight">Ideal BMI</p>
+</div>
+<p class="text-slate-900 dark:text-slate-100 tracking-tight text-xl font-bold leading-tight">Normal</p>
+<p class="text-[10px] text-slate-500">Based on breed standards</p>
+</div>
+</div>
+<!-- Notification Tip -->
+<div class="mx-4 mb-20 p-4 bg-primary/5 rounded-xl border border-primary/10 flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+<p class="text-xs leading-relaxed text-slate-700 dark:text-slate-300">
+<span class="font-bold text-primary">AI Insight:</span> Luna's weight gain is consistent with her recovery plan. Consider increasing activity levels by 10% next week.
+            </p>
+</div>
+<!-- Sticky Bottom Navigation -->
+<div class="fixed bottom-0 w-full max-w-md bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-t border-slate-100 dark:border-slate-800">
+<div class="flex gap-2 px-4 pb-6 pt-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Calendar</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="bg-primary/10 px-4 py-1 rounded-full flex flex-col items-center">
+<span class="material-symbols-outlined fill-1">auto_awesome</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">AI Health</p>
+</div>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Profile</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>
