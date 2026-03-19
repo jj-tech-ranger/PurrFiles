@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pet Health Vault</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1",
+                        "accent": "#F48FB1",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-watermark {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M30 40c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm40 0c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm-20 20c-8 0-15 7-15 15s7 15 15 15 15-7 15-15-7-15-15-15z' fill='%23F48FB1' fill-opacity='0.05'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-screen max-w-md mx-auto flex-col overflow-hidden border-x border-slate-100 dark:border-slate-800 shadow-2xl bg-background-light dark:bg-background-dark">
+<!-- Watermark Layer -->
+<div class="absolute inset-0 paw-watermark pointer-events-none opacity-40"></div>
+<!-- Header -->
+<header class="relative z-10 px-6 pt-12 pb-4">
+<div class="flex items-center justify-between mb-6">
+<button class="text-primary dark:text-slate-100">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">notifications</span>
+</div>
+</div>
+<h1 class="text-3xl font-bold text-primary dark:text-slate-100 tracking-tight">Health Vault</h1>
+</header>
+<!-- Toggle Switch -->
+<div class="relative z-10 px-6 py-4">
+<div class="flex h-12 w-full items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 p-1.5 shadow-sm">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 transition-all duration-200 has-[:checked]:bg-primary has-[:checked]:text-white text-slate-400 dark:text-slate-500 text-sm font-semibold">
+<span class="truncate">Daily Logs</span>
+<input checked="" class="invisible w-0" name="vault-tabs" type="radio" value="Daily Logs"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 transition-all duration-200 has-[:checked]:bg-primary has-[:checked]:text-white text-slate-400 dark:text-slate-500 text-sm font-semibold">
+<span class="truncate">Documents</span>
+<input class="invisible w-0" name="vault-tabs" type="radio" value="Documents"/>
+</label>
+</div>
+</div>
+<!-- Main Content: Timeline -->
+<main class="relative z-10 flex-1 overflow-y-auto px-6 py-4 scrollbar-hide">
+<div class="space-y-6 relative">
+<!-- Timeline Vertical Line -->
+<div class="absolute left-4 top-4 bottom-4 w-0.5 bg-slate-200 dark:bg-slate-700"></div>
+<!-- Timeline Item 1 -->
+<div class="relative flex gap-6">
+<div class="z-20 mt-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border-2 border-primary shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm">pets</span>
+</div>
+<div class="flex flex-1 flex-col p-4 rounded-xl bg-white dark:bg-slate-800 shadow-lg shadow-primary/5 border border-slate-50 dark:border-slate-700">
+<div class="flex justify-between items-center mb-1">
+<p class="text-primary dark:text-accent font-bold text-sm">March 12</p>
+<span class="text-lg">😺</span>
+</div>
+<p class="text-slate-700 dark:text-slate-200 text-base font-medium leading-relaxed">Ate normally, very playful</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span> 08:30 AM
+                        </p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex gap-6">
+<div class="z-20 mt-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-600 shadow-sm">
+<span class="material-symbols-outlined text-slate-400 text-sm">bedtime</span>
+</div>
+<div class="flex flex-1 flex-col p-4 rounded-xl bg-white dark:bg-slate-800 shadow-lg shadow-primary/5 border border-slate-50 dark:border-slate-700">
+<div class="flex justify-between items-center mb-1">
+<p class="text-primary dark:text-accent font-bold text-sm">March 10</p>
+<span class="text-lg">😴</span>
+</div>
+<p class="text-slate-700 dark:text-slate-200 text-base font-medium leading-relaxed">Slightly lethargic, took a nap</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span> 02:15 PM
+                        </p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex gap-6">
+<div class="z-20 mt-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border-2 border-primary shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm">restaurant</span>
+</div>
+<div class="flex flex-1 flex-col p-4 rounded-xl bg-white dark:bg-slate-800 shadow-lg shadow-primary/5 border border-slate-50 dark:border-slate-700">
+<div class="flex justify-between items-center mb-1">
+<p class="text-primary dark:text-accent font-bold text-sm">March 8</p>
+<span class="text-lg">🐾</span>
+</div>
+<p class="text-slate-700 dark:text-slate-200 text-base font-medium leading-relaxed">Finished all breakfast, very active</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span> 09:00 AM
+                        </p>
+</div>
+</div>
+<!-- Timeline Item 4 (Additional for scroll) -->
+<div class="relative flex gap-6">
+<div class="z-20 mt-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-600 shadow-sm">
+<span class="material-symbols-outlined text-slate-400 text-sm">medication</span>
+</div>
+<div class="flex flex-1 flex-col p-4 rounded-xl bg-white dark:bg-slate-800 shadow-lg shadow-primary/5 border border-slate-50 dark:border-slate-700">
+<div class="flex justify-between items-center mb-1">
+<p class="text-primary dark:text-accent font-bold text-sm">March 5</p>
+<span class="text-lg">💊</span>
+</div>
+<p class="text-slate-700 dark:text-slate-200 text-base font-medium leading-relaxed">Deworming tablet given successfully.</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span> 07:45 PM
+                        </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="absolute right-6 bottom-24 z-30 h-14 w-14 rounded-full bg-primary text-white shadow-xl shadow-primary/30 flex items-center justify-center hover:scale-105 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="relative z-20 flex h-20 w-full border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 pb-2 shadow-[0_-4px_20px_rgba(0,0,0,0.03)]">
+<div class="flex w-full items-center justify-between">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">pets</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+</a>
+<a class="relative flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="absolute inset-0 m-auto h-12 w-12 rounded-full bg-accent/20 animate-pulse-slow"></div>
+<span class="material-symbols-outlined text-[28px] relative z-10">folder</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">location_on</span>
+</a>
+</div>
+</nav>
+</div>
+<style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 0.2; }
+            50% { transform: scale(1.1); opacity: 0.3; }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+</body></html>

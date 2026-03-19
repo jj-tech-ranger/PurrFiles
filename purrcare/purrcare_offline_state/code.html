@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1",
+                        "accent-pink": "#FCE4EC",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3External%3Cpath d='M30 35c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm10-5c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-20 0c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm10-15c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3z' fill='%23FCE4EC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Main Container -->
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<!-- Background Watermark Pattern -->
+<div class="absolute inset-0 paw-pattern opacity-50 pointer-events-none"></div>
+<!-- Content Area -->
+<div class="flex flex-1 flex-col items-center justify-center px-8 pb-24 z-10">
+<!-- Illustration Container -->
+<div class="w-full max-w-[320px] aspect-square mb-8 relative flex items-center justify-center">
+<!-- Decorative Glow -->
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+<!-- Main Illustration Placeholder -->
+<div class="relative w-full h-full bg-center bg-no-repeat bg-contain" data-alt="Soft 3D tabby cat sleeping by unplugged router" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjgL8W1EY8u8plRbykWwQwjkjliUfGXwv2WLU46s7RixRksUcuu9D-nuntGtBYIy1CH8T8kNE4q4dxkGnWF7p7qwm9uVxN8QPePDQK8UGJz3hjvZT1m_IWlJV_9d36zJdGB48x1HHbOxNG_ZTI-oJZ5GRjA4l8KwlCsEet9FmvCyizaKG6FL5AZpNr3LljAvmjvrpnwtz3e82jRtul0u8zenND8p7b6gQxkbX3QpLc6Z7eT37u8XNlYDmaqrPVP72NK5oLikJJoxg");'>
+</div>
+</div>
+<!-- Text Content -->
+<h1 class="text-primary dark:text-primary tracking-tight text-3xl font-bold leading-tight text-center mb-4">
+                You're offline!
+            </h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed text-center mb-10 max-w-[300px]">
+                Purr AI and Maps will return when you reconnect. You can still view your saved logs and documents in the Vault.
+            </p>
+<!-- Action Button -->
+<button class="flex min-w-[240px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-white text-lg font-semibold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all active:scale-95">
+<span class="truncate">Go to Vault</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 px-6 pb-8 pt-4 flex justify-between items-center z-20">
+<!-- Paw (Home) - Inactive -->
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-300 dark:text-slate-600 flex h-10 w-10 items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">pets</span>
+</div>
+<p class="text-slate-300 dark:text-slate-600 text-[10px] font-bold uppercase tracking-wider">Paw</p>
+</a>
+<!-- AI Sparkles - Inactive -->
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-300 dark:text-slate-600 flex h-10 w-10 items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+</div>
+<p class="text-slate-300 dark:text-slate-600 text-[10px] font-bold uppercase tracking-wider">AI</p>
+</a>
+<!-- Map Pin - Inactive -->
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-300 dark:text-slate-600 flex h-10 w-10 items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">location_on</span>
+</div>
+<p class="text-slate-300 dark:text-slate-600 text-[10px] font-bold uppercase tracking-wider">Maps</p>
+</a>
+<!-- Folder (Vault) - Active -->
+<a class="flex flex-col items-center gap-1 group relative" href="#">
+<!-- Glowing active circle background -->
+<div class="absolute -top-1 h-12 w-12 bg-accent-pink dark:bg-primary/20 rounded-full scale-110"></div>
+<div class="text-primary dark:text-primary z-10 flex h-10 w-10 items-center justify-center">
+<span class="material-symbols-outlined text-[28px] fill-current" style="font-variation-settings: 'FILL' 1">folder</span>
+</div>
+<p class="text-primary dark:text-primary z-10 text-[10px] font-bold uppercase tracking-wider">Vault</p>
+</a>
+</div>
+</div>
+</body></html>

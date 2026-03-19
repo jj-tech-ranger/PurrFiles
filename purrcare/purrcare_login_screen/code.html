@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13", // Theme default
+                        "custom-purple": "#5E35B1",
+                        "custom-pink": "#F48FB1",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(244, 143, 177, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .cat-peek {
+            margin-bottom: -10px;
+            z-index: 10;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden paw-pattern">
+<!-- Top Navigation -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<button aria-label="Go back" class="text-custom-purple dark:text-custom-pink flex size-12 shrink-0 items-center justify-start focus:outline-none">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+</div>
+<!-- Header -->
+<header class="px-6 pt-8 pb-4">
+<h1 class="text-custom-purple dark:text-custom-pink tracking-tight text-[32px] font-bold leading-tight text-left">
+                Welcome to the family!
+            </h1>
+<p class="text-slate-500 dark:text-slate-400 mt-2 text-lg">We're so happy you're here with your furry friend.</p>
+</header>
+<!-- Illustration & Form Area -->
+<div class="flex flex-col w-full px-6 mt-auto mb-auto">
+<!-- Cute Cat Illustration (Peeking) -->
+<div class="flex justify-center cat-peek">
+<div class="w-32 h-24 bg-contain bg-no-repeat bg-bottom" data-alt="Cute brown tabby cat peeking over the form" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5JuXvk59tirl6-755032lCd6jHKSs5hk68k3vKxTVMUCYOEsyEisaCAPtLGm3fTA1cSOw_ClS9UL1KBTP1DevebHlzUD9mU9vadEd44jx4hivmdXAiIECrRKqwNr-HpbtrROGdOuX0VvMUCg1BUALOJCJeQXIjVFwCOhl2vhkowTFRz8LAM6xa-rfE-1ULGC7KL-1Bz3E4Kn7JgkrpzxmWQ30iUtSOnHKTdMMG2tHmCjbWdQYAXLz27C5EI_ESzp_gix59mQXmrM");'>
+</div>
+</div>
+<!-- Login Form -->
+<div class="space-y-4 bg-white dark:bg-slate-800/50 p-6 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-700 relative z-20">
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<input class="form-input flex w-full rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 h-14 placeholder:text-custom-purple/50 focus:border-custom-purple focus:ring-custom-purple/20 text-base font-normal px-5" placeholder="Email Address" type="email"/>
+</label>
+<label class="flex flex-col w-full">
+<div class="relative flex items-center">
+<input class="form-input flex w-full rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 h-14 placeholder:text-custom-purple/50 focus:border-custom-purple focus:ring-custom-purple/20 text-base font-normal px-5 pr-12" placeholder="Password" type="password"/>
+<span class="material-symbols-outlined absolute right-4 text-slate-400 cursor-pointer">visibility</span>
+</div>
+</label>
+</div>
+<div class="pt-2">
+<button class="w-full bg-custom-pink hover:bg-custom-pink/90 text-white font-bold py-4 rounded-full text-lg shadow-md transition-colors">
+                        Sign In
+                    </button>
+</div>
+<div class="text-center">
+<a class="text-sm text-custom-purple/70 dark:text-custom-pink/70 font-medium" href="#">Forgot password?</a>
+</div>
+</div>
+</div>
+<!-- Footer / Social Login -->
+<div class="mt-auto px-6 pb-12">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-px grow bg-slate-200 dark:bg-slate-700"></div>
+<span class="text-slate-400 text-sm font-medium">or</span>
+<div class="h-px grow bg-slate-200 dark:bg-slate-700"></div>
+</div>
+<button class="flex w-full items-center justify-center gap-3 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 h-14 px-4 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm">
+<img alt="Google logo" class="size-6" data-alt="Google colorful G logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn3kBqRkZ7mtwXHOlcSBonuMgwBcXeYjYpaB1dVVss3cyfnjuqvEnHs2R3ybGN36rlBxpiplm19-MVOnNPI889DuiDQk3xiIy3QDF1fyS4Wz-cYiugsyDnu8rIt3-EaG4DMcQ-rrkFNIDM1-TFtZegBrY_oLpKjftbmsr0n0VAdG1gCFovQMckfP4apdFuvJrfaEpJ7meaYKLvuIrlIoJ6iRzmP3W6pFKw0xp_Z0RpMlA4KKaH7Q5vD9bIMV1VkSaQMgrwMN6mWx0"/>
+<span class="text-custom-purple dark:text-white font-semibold">Continue with Google</span>
+</button>
+<p class="text-center mt-6 text-slate-500 dark:text-slate-400 text-sm">
+                Don't have an account? <a class="text-custom-purple dark:text-custom-pink font-bold" href="#">Join the family</a>
+</p>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Switch Pet - Profile Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1",
+                        "accent": "#F48FB1",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .backdrop-blur-custom {
+            backdrop-filter: blur(8px) brightness(0.7);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark overflow-hidden">
+<!-- Mock Home Dashboard Background (Blurred) -->
+<div class="fixed inset-0 z-0 flex flex-col p-6 pointer-events-none grayscale-[0.2]">
+<div class="flex justify-between items-center mb-8">
+<div class="flex flex-col">
+<span class="text-primary/60 text-sm">Welcome back,</span>
+<span class="text-primary font-bold text-2xl">Sarah</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-sm mb-6 border border-primary/5">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full bg-cover bg-center" data-alt="Close up of a cute brown tabby cat face" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDki9xP23s0TOVfp1QT6iMQh0XEmNs6LxuLhQq7torY48It0DVXK0cRz14fUWyl0r02rkdNgi5NR2yO9Ft1OU49PXSfLqYfyQ78Dl7MzYcAYxe6JKEPDpL1S6B7XzgVIN0FM3ZDZpAVSG0JJk3r26MebE3rLqNuVPWpQq4xqGPZfIfMDzzQu2I8OyI7DMalfr9TworYt3sqFfhouBMolG4svgXHnw1e8_j1qQIVMHzJGw2R3y_mlUnE6xn6x0HF3vFuElxxXor6AwM')"></div>
+<div>
+<h3 class="text-xl font-bold text-primary">Kate</h3>
+<p class="text-primary/60">3 years old • Female</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary/5 p-4 rounded-xl">
+<span class="text-xs text-primary/60 uppercase tracking-wider font-semibold">Weight</span>
+<p class="text-lg font-bold text-primary">4.2 kg</p>
+</div>
+<div class="bg-primary/5 p-4 rounded-xl">
+<span class="text-xs text-primary/60 uppercase tracking-wider font-semibold">Activity</span>
+<p class="text-lg font-bold text-primary">85%</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="h-32 bg-white rounded-2xl border border-primary/5 p-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
+<span class="material-symbols-outlined">vaccines</span>
+</div>
+<div>
+<p class="font-bold text-primary">Upcoming Vaccine</p>
+<p class="text-sm text-primary/60">June 12th, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Overlay Layer -->
+<div class="fixed inset-0 z-10 backdrop-blur-custom flex flex-col items-center">
+<!-- Modal Dropdown Window -->
+<div class="w-[92%] max-w-md mt-4 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-slide-down">
+<!-- Top Bar Component Style Handle -->
+<div class="w-full flex justify-center py-3">
+<div class="w-10 h-1.5 bg-primary/10 rounded-full"></div>
+</div>
+<div class="px-6 pb-2 flex items-center justify-between">
+<h2 class="text-primary text-xl font-bold tracking-tight">Select Pet</h2>
+<button class="text-primary/40 hover:text-primary">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Pet List Container -->
+<div class="flex flex-col p-2">
+<!-- Row 1: Active Pet -->
+<button class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 transition-colors">
+<div class="relative">
+<div class="w-12 h-12 rounded-full border-2 border-accent bg-cover bg-center" data-alt="Avatar of a cute brown tabby cat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnmKrecU6RtZcgoZh59kX3bzkd-shd9GVtG0WUP_2gaCT63vutK8dn0y5ryZXpMLG-79A4wu6Ew8hlhfqGBOakGEswsRNJzT2Pd5yDx9wL_Kk0ffC-u-VNdsPWLKKeVo1Je2F-x_mPDnyPv7EkROKtVUYU47TVdhIP7lVppKfqUpCIG6fL7vdKUxzFYvuKCz_LAAvLYS280lZ7rt3GHLpnRJAmSTTYQ4lu9LZ9mq76yWvmccIbgu1EyZwvVXpxq6gN4l3g3syimQ0')"></div>
+</div>
+<p class="text-primary text-lg font-bold flex-1 text-left">Kate</p>
+<div class="text-accent flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">check_circle</span>
+</div>
+</button>
+<!-- Row 2: Divider -->
+<div class="mx-4 my-2 border-t border-primary/5"></div>
+<!-- Row 3: Add New Pet -->
+<button class="flex items-center gap-4 p-4 rounded-xl hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">add</span>
+</div>
+<p class="text-primary text-lg font-medium flex-1 text-left">Add Another Cat</p>
+</button>
+</div>
+<!-- Padding Bottom for modern feel -->
+<div class="h-4"></div>
+</div>
+<!-- Tappable area below to dismiss -->
+<div aria-label="Close menu" class="flex-1 w-full"></div>
+</div>
+<!-- Minimalist Navigation Replacement (as bottom bar is strictly forbidden) -->
+<!-- Content ends here, ensuring no bottom nav bar component is rendered -->
+</body></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1",
+                        "secondary": "#F48FB1",
+                        "background-light": "#fdf8fb",
+                        "background-dark": "#1a1326",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .map-gradient {
+            background: radial-gradient(circle at center, #fdf8fb 0%, #f4e8f4 100%);
+        }
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+        @keyframes pulse-animation {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<div class="absolute inset-0 z-0 map-gradient" data-location="Kapsabet, Kenya" style="">
+<div class="absolute inset-0 opacity-20" data-alt="Subtle geometric map grid pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5y40Df8A5bLChpzGfjAgAITxv-yiDfOJIUE4MDVj45xHk9klwWSElzLjpJMDxASXBfhPele3JiYLi4OMfjouSx-o64IPrEfmIcacn4xxv2CXtagqmPVzKNVyFusx5YyK-7WA41oCaZu0tGNMlT14QPUjP1SmsADwJVTGP8OyK9OwvqguTrKGMaPAdLMgtQbVpAE71zf6xprRgiRcxQzZdbzvsHZw1ojaXNe12JxCLqurSsqpbRQf6lfzOOK_-aONFs__fPYM6uLc');"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="w-4 h-4 bg-blue-500 rounded-full border-2 border-white pulse"></div>
+</div>
+</div>
+<div class="absolute top-[40%] left-[30%]">
+<div class="flex flex-col items-center">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-xl !fill-1">pets</span>
+</div>
+<div class="w-0.5 h-2 bg-primary"></div>
+</div>
+</div>
+<div class="absolute top-[35%] right-[25%]">
+<div class="flex flex-col items-center">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-xl !fill-1">pets</span>
+</div>
+<div class="w-0.5 h-2 bg-primary"></div>
+</div>
+</div>
+<div class="absolute bottom-[45%] right-[40%]">
+<div class="flex flex-col items-center">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-xl !fill-1">pets</span>
+</div>
+<div class="w-0.5 h-2 bg-primary"></div>
+</div>
+</div>
+</div>
+<div class="relative z-10 p-4 pt-12">
+<div class="flex items-center w-full bg-white dark:bg-slate-800 rounded-xl shadow-xl px-4 py-1 border border-primary/10">
+<span class="material-symbols-outlined text-primary mr-3">search</span>
+<input class="w-full py-3 bg-transparent border-none focus:ring-0 text-slate-700 dark:text-slate-200 placeholder:text-slate-400" placeholder="Find a vet near you..." type="text"/>
+<span class="material-symbols-outlined text-slate-400">tune</span>
+</div>
+</div>
+<div class="mt-auto relative z-10 px-4 mb-4">
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-2xl border border-primary/5 flex gap-4 items-center">
+<div class="flex-1">
+<h3 class="text-primary font-bold text-lg">Kapsabet Vet Clinic</h3>
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-sm mb-2">
+<span class="material-symbols-outlined text-xs">near_me</span>
+<span>Distance: 2.5 km</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary font-semibold">Consultation: ~1,500 KES</span>
+<div class="flex">
+<span class="material-symbols-outlined text-yellow-400 text-xs !fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs !fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs !fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs !fill-1">star</span>
+<span class="material-symbols-outlined text-slate-300 text-xs !fill-1">star</span>
+</div>
+</div>
+</div>
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+<img alt="Clinic building" class="w-full h-full object-cover" data-alt="Modern clean veterinary clinic exterior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIKKU7Ywgw6Ml7_UzhEHdd5b1CQ6U0AKudbVuWTMK5zK-8VMWfnDlpxGB7iAKN1jeFv0SFxr2skQbIjJ2xSrmOvNdEFJst094HPeFiBFgrcp911kg0nbWelf8XvB2W4u6qXNkT7C2nNmM_fcNz6Ts1XotPfgG3Cjs5YymB2VCCGf0MQoC-Ad2NV3rZsEdSL1cgza6AzbVY10Qx_9bu_ed0_-UKwLPqiAAzobyKlBfVoqm5lgb_8Wn8yhfpZAxOA9bqjHUSSvUR2yU"/>
+</div>
+</div>
+</div>
+<div class="relative z-20 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 px-6 py-3 pb-8 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors text-[28px]">pets</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors text-[28px]">auto_awesome</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors text-[28px]">folder</span>
+</a>
+<a class="relative flex flex-col items-center justify-center h-12 w-12 group" href="#">
+<div class="absolute inset-0 bg-secondary/30 rounded-full scale-110 blur-sm"></div>
+<div class="absolute inset-0 bg-secondary/20 rounded-full"></div>
+<span class="material-symbols-outlined text-primary relative z-10 text-[28px] !fill-1">location_on</span>
+</a>
+</div>
+<div class="absolute right-4 bottom-48 z-10 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white dark:bg-slate-800 shadow-lg rounded-full flex items-center justify-center text-primary border border-primary/10">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-10 h-10 bg-white dark:bg-slate-800 shadow-lg rounded-full flex items-center justify-center text-primary border border-primary/10">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="w-10 h-10 bg-white dark:bg-slate-800 shadow-lg rounded-full flex items-center justify-center text-primary mt-2 border border-primary/10">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pet Health - Upload Document</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1", // Deep soft purple
+                        "accent": "#F48FB1", // Pastel pink
+                        "background-light": "#FAFAFA", // Soft off-white
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-print-bg {
+            background-color: #FAFAFA;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-12 6c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm24 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-12 14c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z' fill='%23F48FB1' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<nav class="flex items-center px-4 pt-6 pb-2">
+<button class="text-primary hover:bg-primary/10 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</nav>
+<!-- Content Area -->
+<main class="flex-1 px-6 pb-24 flex flex-col paw-print-bg">
+<!-- Header -->
+<header class="mt-4 mb-8">
+<h1 class="text-3xl font-bold text-primary tracking-tight">Add to Vault</h1>
+</header>
+<!-- Upload Drop Zone -->
+<div class="mb-8">
+<div class="flex flex-col items-center justify-center gap-4 rounded-3xl border-2 border-dashed border-accent bg-accent/5 px-6 py-16 text-center cursor-pointer hover:bg-accent/10 transition-colors">
+<div class="bg-accent/20 p-4 rounded-full">
+<span class="material-symbols-outlined text-5xl text-accent">folder_open</span>
+</div>
+<div class="space-y-1">
+<p class="text-primary text-lg font-semibold leading-tight">Tap to upload PDF or Image</p>
+<p class="text-slate-500 text-sm">PDF, JPG, or PNG supported</p>
+</div>
+</div>
+</div>
+<!-- Form Fields -->
+<div class="space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-primary text-sm font-semibold px-1">Document Name (e.g., Rabies 2026)</label>
+<div class="relative">
+<input class="w-full h-14 bg-slate-100 dark:bg-slate-800 border-none rounded-2xl px-5 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:ring-2 focus:ring-primary/20" placeholder="Enter name" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-primary text-sm font-semibold px-1">Date</label>
+<div class="relative flex items-center">
+<input class="w-full h-14 bg-slate-100 dark:bg-slate-800 border-none rounded-2xl px-5 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:ring-2 focus:ring-primary/20" placeholder="Select date" type="text"/>
+<div class="absolute right-4 text-primary pointer-events-none">
+<span class="material-symbols-outlined text-xl">calendar_today</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action Button -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-light via-background-light to-transparent dark:from-background-dark dark:via-background-dark">
+<button class="w-full h-16 bg-primary hover:bg-primary/90 text-white rounded-full text-lg font-bold shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+            Save to Vault
+        </button>
+</div>
+<!-- Decorative Illustration (Optional Subtle Overlay) -->
+<div class="hidden">
+<img data-alt="Subtle abstract pastel pink paw prints trail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-td9zHE3K4ZLz_VV_LomDE4BaujCDlP1WPJO71JHJCiOAoPme6HWXagLCxCCUa0b782zbzIv6Z7lPayLd_GuU9-y-bVgEKCJUrlesJj9gfIq3cDW6FqGmFAb0n81D3yik-D6drUeLwR1LrKPIazg2CKxwZyblGraUQ_6mTQ5HJxCtypM2DL3OOpjTqlPUzLUVMSsstgEjI3Zph0L0HviBVQ9S1sV0UQZkiZnCHla2W7OIkT3GMNCBkHUUAO5mfrF0x28_1L8sZF0"/>
+</div>
+</body></html>

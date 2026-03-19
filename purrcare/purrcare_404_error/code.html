@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#F48FB1", // Pastel Pink Accent
+                "secondary": "#5E35B1", // Deep Soft Purple Typography
+                "background-light": "#FAFAFA",
+                "background-dark": "#221610",
+              },
+              fontFamily: {
+                "display": ["Public Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .paw-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%23F48FB1' fill-opacity='0.08'%3E%3Cpath d='M8.35,5.166C9.921,4.827,10.858,3.728,10.441,2.712s-2.062-1.503-3.633-1.164-2.508,1.438-2.091,2.454S6.779,5.505,8.35,5.166Zm6.482,0c1.571,0.339,2.791-0.128,3.208-1.144s-0.52-2.115-2.091-2.454-3.216,0.148-3.633,1.164S13.261,4.827,14.832,5.166Zm-9.1,4.524c1.165,1.11,2.548,0.835,3.091-0.615s-0.015-3.52-1.181-4.63-2.548-0.835-3.091,0.615S4.569,8.58,5.732,9.69Zm11.718,0c1.163-1.11,1.724-3.18,1.181-4.63s-1.926-1.725-3.091-0.615-1.724,3.18-1.181,4.63S16.287,10.8,17.45,9.69Zm-3.16,3.03a4.707,4.707,0,0,0-5.41,0,3.76,3.76,0,0,0-2.31,3.41c0,2.6,2.43,4.71,5.01,4.71s5.01-2.11,5.01-4.71A3.76,3.76,0,0,0,14.29,12.72Z'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
+<!-- Subtle Paw Print Background Pattern -->
+<div class="absolute inset-0 opacity-40 pointer-events-none rotate-12 scale-150 paw-pattern"></div>
+<!-- Main Content Area -->
+<div class="flex flex-col flex-1 items-center justify-center px-8 z-10">
+<!-- Illustration Area -->
+<div class="relative w-full aspect-square mb-12 flex items-center justify-center">
+<img alt="Mischievous brown tabby cat knocking a ceramic vase off a shelf" class="w-full h-full object-contain mix-blend-multiply" data-alt="Mischievous brown tabby cat knocking a ceramic vase off a shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTT2H15oVYxhdmsJvTbuDMx2rT5rSLjpA98k8E8qD8sfxn2DJeihgW5BDg-oCNZvX49_Iq7AjhkmTr2K06IIkKoZ2EJYcqbmXtavfZyUL2v2SIGTrbrlUtLl817y2Y15URJ9X-NzVmyuos-tt6N1RQfJLwkSnQL-_JQhfxpQW7ShDfpmm-NvHb_9aPK11pHE0ndO2YjMOS3O7y-BixsSokM4sk99cbIyws6Ihl0Hadqp2qaNTAGh53agv0TjlHoBVLNNiro85h8pI"/>
+</div>
+<!-- Typography -->
+<div class="text-center space-y-3">
+<h1 class="text-secondary dark:text-primary text-5xl font-bold tracking-tight">Oops!</h1>
+<p class="text-secondary/70 dark:text-slate-300 text-lg font-medium leading-relaxed max-w-[240px] mx-auto">
+                    Kate knocked this page off the server.
+                </p>
+</div>
+<!-- Action Button -->
+<div class="mt-12 w-full">
+<button class="w-full bg-primary hover:bg-primary/90 transition-colors text-white font-bold py-4 rounded-full shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">home</span>
+                    Go back Home
+                </button>
+</div>
+</div>
+<!-- Inactive Bottom Navigation Bar -->
+<div class="bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 px-6 py-4 pb-8 flex items-center justify-between z-20">
+<div class="flex flex-col items-center gap-1 text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-2xl">pets</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-2xl">auto_awesome</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-2xl">folder</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-2xl" data-location="Pet Location">map</span>
+</div>
+</div>
+</div>
+</body></html>

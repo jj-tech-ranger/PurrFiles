@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1", // Deep soft purple
+                        "accent": "#F48FB1",  // Pastel pink
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-pattern {
+            background-color: #FAFAFA;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 14.5c.828 0 1.5-.672 1.5-1.5S11.828 11.5 11 11.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm3-5c.828 0 1.5-.672 1.5-1.5S14.828 6.5 14 6.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm5 0c.828 0 1.5-.672 1.5-1.5S19.828 6.5 19 6.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm3 5c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm-5 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z' fill='%23F48FB1' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden paw-pattern">
+<!-- Top Half: Map View -->
+<div class="relative h-1/2 w-full overflow-hidden">
+<div class="absolute inset-0 bg-[#E8EAF6]" data-alt="Soft toned street view map of Kapsabet" data-location="Kapsabet, Kenya" style="">
+<!-- Decorative Map Elements -->
+<svg class="w-full h-full opacity-30" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 50 L400 50 M0 150 L400 150 M0 250 L400 250 M0 350 L400 350" fill="none" stroke="#5E35B1" stroke-width="2"></path>
+<path d="M50 0 L50 400 M150 0 L150 400 M250 0 L250 400 M350 0 L350 400" fill="none" stroke="#5E35B1" stroke-width="2"></path>
+<circle cx="210" cy="190" fill="#F48FB1" r="12"></circle>
+<circle cx="210" cy="190" fill="#F48FB1" fill-opacity="0.2" r="25"></circle>
+</svg>
+</div>
+<!-- Floating Back Button -->
+<button class="absolute top-6 left-6 z-20 flex size-12 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<!-- Map Zoom Controls (Small & Subtle) -->
+<div class="absolute right-6 top-1/4 flex flex-col gap-2 z-10">
+<button class="flex size-10 items-center justify-center rounded-xl bg-white/90 shadow-md text-primary">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-xl bg-white/90 shadow-md text-primary">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+</div>
+<!-- Bottom Half: Details Sheet -->
+<div class="absolute bottom-0 left-0 right-0 z-30 flex h-[55%] flex-col rounded-t-2xl bg-white shadow-[0_-10px_30px_rgba(0,0,0,0.08)] px-6 pt-2 pb-10">
+<!-- Sheet Handle -->
+<div class="mx-auto mb-6 h-1.5 w-12 rounded-full bg-slate-200"></div>
+<div class="flex-1 space-y-6">
+<!-- Clinic Identity -->
+<div>
+<h1 class="text-3xl font-bold text-primary leading-tight">
+                        Kapsabet Veterinary Clinic
+                    </h1>
+<div class="mt-2 flex items-center gap-2 text-slate-500">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<p class="text-base">123 Clinic Road, Kapsabet</p>
+</div>
+<div class="mt-1 flex items-center gap-2 text-slate-500">
+<span class="material-symbols-outlined text-sm text-green-500">schedule</span>
+<p class="text-base font-medium text-green-600">Open until 5:00 PM</p>
+</div>
+</div>
+<!-- Price Estimate Card -->
+<div class="rounded-2xl bg-accent/10 border border-accent/20 p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-full bg-accent/20 text-accent">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<p class="text-xs font-semibold uppercase tracking-wider text-accent/80">Fee Estimate</p>
+<p class="text-xl font-bold text-accent">~1,500 KES</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-accent/50">info</span>
+</div>
+<!-- Amenities/Features (Subtle Row) -->
+<div class="flex gap-4 overflow-x-auto no-scrollbar py-2">
+<div class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 shrink-0">
+<span class="material-symbols-outlined text-base">emergency</span> Emergency Care
+                    </div>
+<div class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 shrink-0">
+<span class="material-symbols-outlined text-base">vaccines</span> Vaccinations
+                    </div>
+<div class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 shrink-0">
+<span class="material-symbols-outlined text-base">medical_services</span> Surgery
+                    </div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-auto flex gap-4 pt-6">
+<button class="flex flex-1 items-center justify-center gap-2 rounded-full bg-accent py-4 text-white font-bold shadow-lg shadow-accent/20 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined">call</span>
+                    Call Clinic
+                </button>
+<button class="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary py-4 text-white font-bold shadow-lg shadow-primary/20 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined">near_me</span>
+                    Get Directions
+                </button>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="850c963d-ac0d-4f3f-a325-d7047f6bf818" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PurrFiles.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/404_offline_state/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/404_offline_state/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_analysis_result/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_analysis_result/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_health_loading_state/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_health_loading_state/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_symptom_input/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_symptom_input/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/booking_confirmation/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/booking_confirmation/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/calendar_tracking/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/calendar_tracking/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/cat_health_tips/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/cat_health_tips/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/clinic_details/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/clinic_details/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/edit_pet_profile/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/edit_pet_profile/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/find_a_vet/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/find_a_vet/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/litter_box_mood_log/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/litter_box_mood_log/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/main_dashboard_home_view/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/main_dashboard_home_view/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_vault/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_vault/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_with_share_option/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_with_share_option/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/notification_center/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/notification_center/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_profile/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_profile/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_1/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_1/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_2/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_2/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_3/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_3/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcare_plus_landing/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcare_plus_landing/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcommunity_feed/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcommunity_feed/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/quick_log_bottom_sheet/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/quick_log_bottom_sheet/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/settings/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/settings/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/shared_access/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/shared_access/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/splash_login_screen/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/splash_login_screen/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/tip_detail_active_indoor_cats/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/tip_detail_active_indoor_cats/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/weight_growth_chart/code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/weight_growth_chart/screen.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/JJ/WebstormProjects/PurrFiles" value="3B9NMOhu9UStiDz8E3435IYDkc0" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jj-tech-ranger"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jj-tech-ranger/PurrFiles",
+    "accountId": "e1305d60-a713-4a3c-bc23-d75f87ed08cd"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3B9NMOhu9UStiDz8E3435IYDkc0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="850c963d-ac0d-4f3f-a325-d7047f6bf818" name="Changes" comment="" />
+      <created>1773897283102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773897283102</updated>
+      <workItem from="1773897302702" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5E35B1",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1a1226",
+                        "accent-pink": "#F8BBD0",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .paw-watermark {
+            background-image: radial-gradient(circle at 20% 20%, rgba(248, 187, 208, 0.05) 0%, transparent 20%),
+                              radial-gradient(circle at 80% 50%, rgba(248, 187, 208, 0.05) 0%, transparent 20%),
+                              radial-gradient(circle at 30% 80%, rgba(248, 187, 208, 0.05) 0%, transparent 20%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden min-h-screen">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden paw-watermark">
+<!-- Top Navigation -->
+<header class="flex items-center p-6 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-10">
+<button class="text-primary flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<div class="flex-1 px-4">
+<h1 class="text-primary text-xl font-bold tracking-tight">Help &amp; Privacy</h1>
+</div>
+<div class="size-10"></div> <!-- Spacer for symmetry -->
+</header>
+<main class="flex-1 px-6 pt-8 pb-12 max-w-2xl mx-auto w-full">
+<!-- Page Title Area -->
+<div class="mb-10">
+<h2 class="text-primary text-3xl font-bold leading-tight tracking-tight mb-4">Legal &amp; Support</h2>
+<div class="h-1 w-12 bg-primary/20 rounded-full"></div>
+</div>
+<!-- AI Diagnostic Disclaimer Section -->
+<section class="mb-12">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary/70">medical_services</span>
+<h3 class="text-primary text-xl font-bold leading-tight">AI Diagnostic Disclaimer</h3>
+</div>
+<div class="bg-white/50 dark:bg-white/5 p-6 rounded-xl border border-primary/10">
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed">
+                        PurrCare is designed to provide guidance and support for your pet's health, but it is not a substitute for professional veterinary advice, diagnosis, or treatment. 
+                    </p>
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed mt-4">
+                        Always seek the advice of your veterinarian with any questions you may have regarding a medical condition. Our AI analysis is a supplementary tool to help you understand your pet's wellness patterns.
+                    </p>
+</div>
+</section>
+<!-- Data Privacy Section -->
+<section class="mb-12">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary/70">security</span>
+<h3 class="text-primary text-xl font-bold leading-tight">Data Privacy</h3>
+</div>
+<div class="bg-white/50 dark:bg-white/5 p-6 rounded-xl border border-primary/10">
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed">
+                        Your data security is our priority. PurrCare ensures that all personal information and pet health records are encrypted and stored securely. 
+                    </p>
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed mt-4">
+                        We believe your pet's health history belongs to you. We do not share your private data with third parties without your explicit consent. All transmissions are protected using industry-standard protocols.
+                    </p>
+</div>
+</section>
+<!-- Contact Support Section -->
+<section class="mb-12">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary/70">support_agent</span>
+<h3 class="text-primary text-xl font-bold leading-tight">Contact Support</h3>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-2">
+                        Have more questions? Our team is here to help you and your furry friend.
+                    </p>
+<a class="flex items-center justify-center gap-2 bg-white dark:bg-slate-800 border-2 border-primary/20 hover:border-primary/40 text-primary font-bold py-4 px-8 rounded-xl transition-all shadow-sm active:scale-[0.98]" href="mailto:support@purrcare.app">
+<span class="material-symbols-outlined">mail</span>
+                        Email Support
+                    </a>
+</div>
+</section>
+<!-- Footer Logo/Subtle Brand -->
+<div class="mt-20 flex flex-col items-center opacity-40">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">pets</span>
+<span class="font-bold text-primary tracking-wide">PurrCare</span>
+</div>
+<p class="text-xs text-slate-500">Version 2.4.0 • Built with love for pets</p>
+</div>
+</main>
+<!-- Aesthetic Bottom Space -->
+<div class="h-8 bg-transparent"></div>
+</div>
+</body></html>
