@@ -1,68 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850c963d-ac0d-4f3f-a325-d7047f6bf818" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PurrFiles.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/404_offline_state/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/404_offline_state/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_analysis_result/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_analysis_result/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_health_loading_state/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_health_loading_state/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_symptom_input/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/ai_symptom_input/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/booking_confirmation/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/booking_confirmation/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/calendar_tracking/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/calendar_tracking/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/cat_health_tips/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/cat_health_tips/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/clinic_details/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/clinic_details/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/edit_pet_profile/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/edit_pet_profile/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/find_a_vet/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/find_a_vet/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/litter_box_mood_log/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/litter_box_mood_log/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/main_dashboard_home_view/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/main_dashboard_home_view/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_vault/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_vault/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_with_share_option/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/medical_records_with_share_option/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/notification_center/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/notification_center/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_profile/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_profile/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_1/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_1/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_2/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_2/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_3/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/pet_setup_step_3/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcare_plus_landing/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcare_plus_landing/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcommunity_feed/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/purrcommunity_feed/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/quick_log_bottom_sheet/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/quick_log_bottom_sheet/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/settings/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/settings/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/shared_access/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/shared_access/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/splash_login_screen/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/splash_login_screen/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/tip_detail_active_indoor_cats/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/tip_detail_active_indoor_cats/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/weight_growth_chart/code.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stitch_design/stitch_splash_login_screen/weight_growth_chart/screen.png" beforeDir="false" />
+    <list default="true" id="850c963d-ac0d-4f3f-a325-d7047f6bf818" name="Changes" comment="PurrCare files initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,38 +17,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jj-tech-ranger"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jj-tech-ranger&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jj-tech-ranger/PurrFiles",
-    "accountId": "e1305d60-a713-4a3c-bc23-d75f87ed08cd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jj-tech-ranger/PurrFiles&quot;,
+    &quot;accountId&quot;: &quot;e1305d60-a713-4a3c-bc23-d75f87ed08cd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3B9NMOhu9UStiDz8E3435IYDkc0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JJ/WebstormProjects/PurrFiles&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -124,8 +65,35 @@
       <option name="presentableId" value="Default" />
       <updated>1773897283102</updated>
       <workItem from="1773897302702" duration="42000" />
+      <workItem from="1773900089689" duration="712000" />
+      <workItem from="1774087064688" duration="590000" />
+      <workItem from="1774589547363" duration="358000" />
     </task>
+    <task id="LOCAL-00001" summary="PurrCare files initial commit">
+      <option name="closed" value="true" />
+      <created>1773900137029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773900137030</updated>
+    </task>
+    <task id="LOCAL-00002" summary="PurrCare files initial commit">
+      <option name="closed" value="true" />
+      <created>1773900145701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773900145701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PurrCare files initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="PurrCare files initial commit" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
